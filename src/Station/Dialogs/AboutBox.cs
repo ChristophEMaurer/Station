@@ -36,7 +36,9 @@ namespace Station
             lblCopyright.Text = "Copyright © 2007-2010 Christoph Maurer"
                 + Environment.NewLine
                 + "ch.maurer@gmx.de"
-                ;
+                + Environment.NewLine
+                + "https://github.com/ChristophEMaurer/Station"
+                ; 
 
             PopulateInfos();
 
