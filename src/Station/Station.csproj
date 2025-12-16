@@ -1,0 +1,323 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EF05347-79A4-46CF-9DF5-B4D2B80F7861}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Station</RootNamespace>
+    <AssemblyName>Station</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DATABASE_ACCESS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DATABASE_ACCESS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseLayer.cs" />
+    <Compile Include="DatabaseLayerAccess.cs" />
+    <Compile Include="Dialogs\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLayer.cs" />
+    <Compile Include="Dialogs\DiagnosenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DiagnosenView.Designer.cs">
+      <DependentUpon>DiagnosenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DynamicDiagramView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DynamicDiagramView.Designer.cs">
+      <DependentUpon>DynamicDiagramView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\InfektionenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\InfektionenView.Designer.cs">
+      <DependentUpon>InfektionenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\LogView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LogView.Designer.cs">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PluginInfoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PluginInfoView.designer.cs">
+      <DependentUpon>PluginInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station.cs" />
+    <Compile Include="Dialogs\StationImportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintStation.cs" />
+    <Compile Include="Dialogs\BettenAuswahlView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\BettenAuswahlView.Designer.cs">
+      <DependentUpon>BettenAuswahlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\LegendeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LegendeView.Designer.cs">
+      <DependentUpon>LegendeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectInfektionenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectInfektionenView.Designer.cs">
+      <DependentUpon>SelectInfektionenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Station.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\StationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PatientView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PatientView.Designer.cs">
+      <DependentUpon>PatientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PatientenAuswahlView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PatientenAuswahlView.Designer.cs">
+      <DependentUpon>PatientenAuswahlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dialogs\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\BettenAuswahlView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BettenAuswahlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DiagnosenView.resx">
+      <DependentUpon>DiagnosenView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DynamicDiagramView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DynamicDiagramView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LegendeView.resx">
+      <DependentUpon>LegendeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\InfektionenView.resx">
+      <DependentUpon>InfektionenView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LogView.resx">
+      <DependentUpon>LogView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PluginInfoView.resx">
+      <DependentUpon>PluginInfoView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\StationImportView.resx">
+      <DependentUpon>StationImportView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectInfektionenView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectInfektionenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\StationForm.resx">
+      <DependentUpon>StationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PatientView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PatientenAuswahlView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientenAuswahlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StationStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StationStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InformationBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InformationBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ZimmerView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZimmerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Station.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Station.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="StationStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StationStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InformationBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\InformationBox.Designer.cs">
+      <DependentUpon>InformationBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Zimmer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ZimmerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ZimmerView.Designer.cs">
+      <DependentUpon>ZimmerView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\Station.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppFramework\AppFramework.csproj">
+      <Project>{F4723B21-C7CD-455C-B522-5329AB5BFD15}</Project>
+      <Name>AppFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StationAppFramework\StationAppFramework.csproj">
+      <Project>{56e30fcd-7203-4d97-a967-6ac049655654}</Project>
+      <Name>StationAppFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StationImport\StationImport.csproj">
+      <Project>{09e905d7-f1b6-4b33-96b0-8aa7ea51fca9}</Project>
+      <Name>StationImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{943ce5c3-9b68-447e-9bb9-f95c9e2a4ae5}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Windows\Forms\Forms.csproj">
+      <Project>{9DCE0C0F-2B72-4B7F-94D1-1D50A26F55C3}</Project>
+      <Name>Forms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

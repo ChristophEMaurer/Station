@@ -1,0 +1,32 @@
+1;"G18Z";"Eingriffe an D¸nn- und Dickdarm";4;15,70;30
+2;"G24Z";"Eingriffe bei Bauchwandhernien, Nabelhernien und anderen Hernien, Alter > 0 Jahre oder beidseitige Eingriffe bei Leisten- und Schenkelhernien, Alter > 0 Jahre und < 56 Jahre oder Eingriffe bei Leisten- und Schenkelhernien, Alter > 55 Jahre";1;5;11
+3;"K12Z";"Eingriffe an Schilddr¸se, Nebenschilddr¸se und Ductus thyreoglossus, auﬂer bei bˆsartiger Neubildung, ohne zus‰tzliche Parathyreoidektomie, ‰uﬂerst schwere oder schwere CC";1;4,70;9
+4;"H08B";"Laparoskopische Cholezystektomie ohne sehr komplexe Diagnose";1;5,70;12
+5;"G26Z";"Andere Eingriffe am Anus";1;4,40;10
+6;"G02Z";"Eingriffe an D¸nn- und Dickdarm mit komplexem Eingriff oder komplizierender Diagnose";5;19,40;36
+7;"G25Z";"Eingriffe bei Leisten≠ und Schenkelhernien, Alter > 0 Jahre oder Eingriffe bei Hernien, Alter < 1 Jahr";1;3,70;8
+8;"G21Z";"Adh‰siolyse am Peritoneum, Alter > 3 Jahre und ohne ‰uﬂerst schwere oder schwere CC oder andere Eingriffe an Darm oder Enterostoma ohne ‰uﬂerst schwere CC";1;6,50;14
+9;"G17Z";"Andere Rektumresektion";5;18,10;33
+10;"G67C";"÷sophagitis, Gastroenteritis und verschiedene Erkrankungen der Verdauungsorgane ohne komplexe oder komplizierende Diagnose, ohne Dialyse, Alter > 0 Jahre";1;3,80;9
+11;"G65Z";"Obstruktion des Verdauungstraktes";1;4,70;11
+12;"G23B";"Appendektomie auﬂer bei Peritonitis ohne ‰uﬂerst schwere oder schwere CC, Alter > 9 Jahre";1;4,60;8
+13;"H07B";"Cholezystektomie ohne sehr komplexe Diagnose";3;11,10;22
+14;"G07Z";"Appendektomie bei Peritonitis mit ‰uﬂerst schweren oder schweren CC oder kleine Eingriffe an D¸nn≠ und Dickdarm ohne ‰uﬂerst schwere CC";2;9,90;19
+15;"G04Z";"Adh‰siolyse am Peritoneum, Alter < 4 Jahre oder mit ‰uﬂerst schweren oder schweren CC oder kleine Eingriffe an D¸nn≠ und Dickdarm mit ‰uﬂerst schweren CC";4;13,90;27
+16;"J09Z";"Eingriffe bei Sinus pilonidalis und perianal";1;4,30;10
+17;"G71Z";"Andere m‰ﬂig schwere Erkrankungen der Verdauungsorgane";1;3,90;9
+18;"G19B";"Andere Eingriffe an Magen, ÷sophagus und Duodenum auﬂer bei bˆsartiger Neubildung";3;11,50;24
+19;"F39B";"Unterbindung und Stripping von Venen ohne beidseitigen Eingriff, ohne Ulzeration, ohne ‰uﬂerst schwere oder schwere CC";1;3;6
+20;"G08B";"Komplexe Rekonstruktion der Bauchwand, Alter > 0 Jahre, ohne ‰uﬂerst schwere CC";2;7,80;15
+21;"G66B";"Abdominalschmerz oder mesenteriale Lymphadenitis, Alter < 56 Jahre oder ohne CC";1;3;7
+22;"G67B";"÷sophagitis, Gastroenteritis und verschiedene Erkrankungen der Verdauungsorgane mit komplexer Diagnose oder mit komplizierender Diagnose, Dialyse oder Alter < 1 Jahr";1;5,10;12
+23;"T01C";"OR≠Prozedur bei infektiˆsen und parasit‰ren Krankheiten ohne komplexe OR-Prozedur, auﬂer bei Zustand nach Organtransplantation, auﬂer bei Sepsis";3;13,50;28
+24;"G48Z";"Koloskopie mit ‰uﬂerst schweren oder schweren CC oder komplizierendem Eingriff";1;7,30;17
+25;"F65B";"Periphere Gef‰ﬂkrankheiten ohne komplexe Diagnose oder ohne ‰uﬂerst schwere CC";1;6,60;17
+26;"G60B";"Bˆsartige Neubildung der Verdauungsorgane, ein Belegungstag oder ohne ‰uﬂerst schwere CC";1;3,50;8
+27;"J11A";"Andere Eingriffe an Haut, Unterhaut und Mamma mit m‰ﬂig komplexer Prozedur";1;6,90;18
+28;"K11Z";"Eingriffe an Schilddr¸se, Nebenschilddr¸se und Ductus thyreoglossus, auﬂer bei bˆsartiger Neubildung, mit zus‰tzlicher Parathyreoidektomie oder ‰uﬂerst schweren oder schweren CC";1;6;13
+29;"G70B";"Andere schwere Erkrankungen der Verdauungsorgane ohne ‰uﬂerst schwere CC";1;6,70;16
+30;"X63Z";"Folgen einer medizinischen Behandlung";1;5,10;13
+31;"G03Z";"Groﬂe Eingriffe an Magen, ÷sophagus und Duodenum";6;21,70;38
+32;"G22B";"Appendektomie bei Peritonitis oder mit ‰uﬂerst schweren oder schweren CC, Alter > 9 Jahre";1;7;14
